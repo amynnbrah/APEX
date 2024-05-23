@@ -82,7 +82,7 @@ nav ul li a {
   background-color: #e67e22;
 }
 
-/* Services Section Styles */
+/* Default styles */
 .services {
   padding: 50px 0; /* Add padding top and bottom */
 }
@@ -94,6 +94,8 @@ nav ul li a {
 
 .service-slider {
   display: flex; /* Display slides in a row */
+  flex-wrap: wrap; /* Wrap items onto the next line */
+  justify-content: space-between; /* Distribute items evenly */
 }
 
 .service-item {
@@ -117,6 +119,17 @@ nav ul li a {
 .service-item p {
   font-size: 16px; /* Font size for service descriptions */
   line-height: 1.6; /* Line height for better readability */
+}
+
+/* Media query for mobile devices */
+@media only screen and (max-width: 767px) {
+  .service-slider {
+    flex-direction: column; /* Stack items vertically */
+  }
+
+  .service-item {
+    width: 100%; /* Each service takes up full width on mobile */
+  }
 }
 
 /* About Us Section Styles */
