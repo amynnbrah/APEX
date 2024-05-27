@@ -24,31 +24,62 @@ body {
   padding: 0 20px;
 }
 
-/* Header Styles */
-header {
-  background-color: #333;
-  color: #fff;
-  padding: 20px 0;
-}
+       /* Header Styles */
+       header {
+        position: fixed;
+        width: 100%;
+        background-color: #333;
+        color: #fff;
+        padding: 10px 0;
+        z-index: 1000;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    }
 
-header h1 {
-  font-size: 24px;
-}
+    header .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 20px;
+    }
 
-nav ul {
-  list-style: none;
-}
+    header h1 {
+        font-size: 24px;
+        margin: 0;
+    }
 
-nav ul li {
-  display: inline;
-  margin-right: 20px;
-}
+    nav ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        display: flex;
+    }
 
-nav ul li a {
-  color: #fff;
-  text-decoration: none;
-}
+    nav ul li {
+        margin-left: 20px;
+    }
 
+    nav ul li:first-child {
+        margin-left: 0;
+    }
+
+    nav ul li a {
+        color: #fff;
+        text-decoration: none;
+        font-size: 16px;
+        padding: 5px 10px;
+        transition: background-color 0.3s, color 0.3s;
+    }
+
+    nav ul li a:hover {
+        background-color: #fff;
+        color: #333;
+        border-radius: 5px;
+    }
+
+    .content {
+        margin-top: 80px; /* Adjust according to header height */
+        padding: 20px;
+    }
 /* Hero Section Styles */
 .hero {
   background-image: url("https://a0.muscache.com/im/pictures/48333c7b-3959-4822-b643-11053a481e91.jpg"); /* Replace 'hero-image.jpg' with your actual hero image */
